@@ -1,5 +1,11 @@
 /*this agent can move with user's face
- and face to the use's face*/
+ and face to the use's face.
+ It also has the act of spacing
+ and when press the k key then the agent become big
+ so the user can feel that the agent is closing to the user.
+ Now aimming to let user feel there is a space in the wall,
+ the virture agent was put in a room image.
+ */
 
 
 import hypermedia.net.*;
@@ -39,8 +45,10 @@ float[] moveRadians_vertical = {
   0, 0, 0, 0, 0, 
   0, 0, 0, 0, 0, 
 };
-float x; //position of agent's x
-float y; //position of agent's y
+float x = 0.0; //position of agent's x
+float y = 0.0; //position of agent's y
+int i = 0;
+
 head theHead;
 body theBody;
 arm theArm;
@@ -58,11 +66,16 @@ void setup() {
   theBody = new body();
   theArm = new arm();
   theLeg = new leg();
-  
 }
 
 void draw() {
   background(144);
+  line(0, 640, 280, 150);
+  line(280, 0, 280, 150);
+  line(280, 150, 980, 150);
+  line(1260, 640, 980, 150);
+  line(980, 0, 980, 150);
+  
   translate(width/2, height/2, 0);
 
   //put the data of user's face into arrays
@@ -86,12 +99,16 @@ void draw() {
   //float leftRight = map(x, -630, 630, PI/10, -PI/10);
   rotateX(-upDown);//control up and down
   rotateY(leftRight);//control left and right
-  theHead.agent_head();
 
+  //if press the "k" key, the agent can move close to user.
   if (key == 'k') {
-    theHead.headZoomIn();
+    if (i<=250) {
+      translate(0, 0, i);
+    }
+    i += 1;
   }
 
+  theHead.agent_head();
   translate(0, 0, 98);
   theHead.agent_eyeSocket();
   theHead.agent_eyeShine();
@@ -120,7 +137,7 @@ class head {
     noStroke();
     fill(255, 255, 0);
     sphere(100);//randians 100
-    if (i <= 20) {
+    if (i <= 40) {
       sphere(100+i);
     }
     i += 0.1;
@@ -130,6 +147,17 @@ class head {
     fill(0);
     ellipse(-31, 0, 26, 26);
     ellipse(31, 0, 26, 26);
+  }
+
+  void eyeSocketZoomIn() {
+    fill(0);
+    ellipse(-31, 0, 26, 26);
+    ellipse(31, 0, 26, 26);
+    if (i <= 40) {
+      ellipse(-31+i, 0+i, 26+i, 26+i);
+      ellipse(31+i, 0+i, 26+i, 26+i);
+    }
+    i+= 0.1;
   }
 
   void agent_eyeShine() {
@@ -211,4 +239,4 @@ void receive( byte[] data) {
   verticalRadian = Float.parseFloat(message2[3]);
   //get the horizontal radian
   horizontalRadian = Float.parseFloat(message2[4]);
-} 
+}
