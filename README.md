@@ -4,8 +4,7 @@
 我在做的课题是用于支援老年痴呆症生活的agent。<br>
 因为现在介护老年痴呆患者的方式普遍为人工，然而人手不足和人工费高昂，所以介护场所（敬老院，医院）的现状是一位介护者对应多人老年痴呆患者。<br>
 在中国，更多的有老年痴呆患者的家庭采取的是亲属介护的手段对老年痴呆患者进行照顾，另外家人也因为照顾老年痴呆患者感到非常辛苦。<br>
-另外，现在有一个叫做[Humanitude](http://www.infiressources.ca/fer/depotdocument_anglais/the_concept_of_Humanitude_as_applied_to_general_nursing_care.pdf)
-的介护方法在日本被实际运用并且起到了一定的介护效果。它提供了照顾老年痴呆患者的方式，基本技法是注目，对话，触摸和辅助站立。<br>
+另外，现在有一个叫做[Humanitude](http://www.infiressources.ca/fer/depotdocument_anglais/the_concept_of_Humanitude_as_applied_to_general_nursing_care.pdf)的介护方法在日本被实际运用并且起到了一定的介护效果。它提供了照顾老年痴呆患者的方式，基本技法是注目，对话，触摸和辅助站立。<br>
 具体做法是：<br>
 从正面进入患者视野并且逐渐贴近患者面部，与患者四目相对将近3秒后，由介护者开始发起会话。<br>
 谈话时挑选内容积极向上的话题，并且要结合注目和触摸。<br>
