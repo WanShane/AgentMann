@@ -24,5 +24,7 @@
 于是，问题变成了在没有身体接触的情况如何实现“触摸”的感觉。<br>
 首先想到了利用空气，来源于空气的风来触动用户的肌肤。关于“风”的实验将在2019年1月实施实验。<br>
 
-# AgentMann
-This is an university research project
+# Supporting daily life of elderly in dementia by using a virtual agent
+This is an university research project I am doing now.<br>
+First of all, let me introduce this thing in details.<br>
+This project is aimed of supporting dementia elderly's daily life.<br>
