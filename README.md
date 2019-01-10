@@ -15,6 +15,7 @@
 为实现agent随着用户的面部方向移动，并让用户感受到agent向自己的方向逐渐靠近的效果，<br>
 我采用了[faceAPI](http://www.ekstremmakina.com/EKSTREM/product/faceapi/downloads/index.html)对用户的面部朝向进行识别，<br>
 并将采集到数据传递到processing，用以控制agent的行动坐标。<br>
+另：现在faceAPI的下载功能被取消了。研究室还存有faceAPI老版本。
 ②通过agent与用户的对话来完成humanitude的“对话”技法。<br>
 这一部分具体采用什么方法来实现，还在探讨中。<br>
 ③通过触觉装置来实现humanitude的“触摸”技法。<br>
