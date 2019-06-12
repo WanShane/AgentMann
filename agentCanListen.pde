@@ -6,6 +6,11 @@
  so the user can feel that the agent is closing to the user.
  Now aimming to let user feel there is a space in the wall,
  the virture agent was put in a room image. 
+ =====2019/06/12 update memo=====
+ the agent can understant what user's said now.
+ but the user's words just can be understood in Japanese.
+ I chosed Julius the Open-Source Large Vocabulary Continuous Speech Recognition Engine
+ to recognize voice info. 
  */
 
 
