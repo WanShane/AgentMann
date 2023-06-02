@@ -22,9 +22,20 @@
 ~这一部分是利用身体佩戴形式还是非身体接触形式来制造触感，还在探索。<br>~
 考虑到若使用穿戴式装置来实现身体触摸，用户（老年痴呆患者）会有很高的可能性产生厌恶感。因此，使用非穿戴式的装置来实现。<br>
 于是，问题变成了在没有身体接触的情况如何实现“触摸”的感觉。<br>
-首先想到了利用空气，来源于空气的风来触动用户的肌肤。关于“风”的设想将在2019年1月实施实验。<br>
+首先想到了利用空气，来源于空气的风来触动用户的肌肤。关于“风”的设想将在以后实施实验。<br>
 
 # Supporting daily life of elderly in dementia by using a virtual agent
 This is an university research project I am doing now.<br>
 First of all, let me introduce this thing in details.<br>
-This project is aimed of supporting dementia elderly's daily life.<br>
+The project I am working on is an agent designed to support the lives of elderly dementia patients. <br>
+Currently, caregiving for elderly dementia patients is mostly done manually. However, due to a shortage of caregivers and high labor costs, caregiving facilities (such as nursing homes and hospitals) often have one caregiver assigned to multiple dementia patients.<br>
+In China, many families with dementia patients choose to provide care themselves, which puts a lot of burden on the family members. <br>
+Additionally, there is a caregiving method called "Humanitude" that has been successfully implemented in Japan and has shown positive effects in dementia care. It involves specific techniques such as attention, dialogue, touch, and assisted standing.<br>
+The specific approach is as follows:<br>
+Approach the patient from the front and gradually move closer, making eye contact with the patient for about 3 seconds, and then initiate a conversation.<br>
+Choose positive topics for conversation and combine them with attention and touch.<br>
+If there is no response within 3 minutes, pause the caregiving approach for the dementia patient.<br>
+Because this approach combines perception, emotion, and language, I aim to design an agent system that incorporates the techniques of Humanitude to assist family members and caregivers in caring for dementia patients.<br>
+The visual aspect of Humanitude's "attention" technique will be achieved through the agent's visual representation. For this part, I will use processing to implement the appearance of the agent. By using faceAPI to recognize the user's facial orientation and passing the collected data to processing, the agent's movements will be controlled to create the effect of the agent gradually approaching the user.<br>
+The "dialogue" aspect of Humanitude will be implemented through conversations between the agent and the user. The specific method for this part is still under discussion.<br>
+The "touch" technique of Humanitude will be achieved through a tactile device. Whether to use a wearable device or non-body contact form is still being explored. Considering the potential aversion of elderly dementia patients to wearable devices, a non-wearable device will be used. The challenge lies in how to create the sensation of "touch" without physical contact. One idea is to use air and airflow to stimulate the user's skin. An experiment involving the concept of "wind" will be conducted in future.
